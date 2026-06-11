@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipFrame - Kullanım Koşulları (Terms of Use)</title>
+    <style>
+        :root {
+            --bg-color: #080810;
+            --card-bg: #121220;
+            --text-color: #e0e0e0;
+            --text-muted: #a0a0b0;
+            --accent-color: #bd00ff;
+            --accent-gradient: linear-gradient(135deg, #00a2ff 0%, #bd00ff 100%);
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #fff;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 12px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        p, li {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px dashed var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-box a {
+            color: #00a2ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .lang-switch {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: var(--accent-gradient);
+            border-color: transparent;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('tr')">Türkçe</button>
+            <button class="lang-btn" onclick="switchLang('en')">English</button>
+        </div>
+
+        <!-- TÜRKÇE KULLANIM KOŞULLARI -->
+        <div id="lang-tr" class="lang-section active">
+            <div class="card">
+                <header>
+                    <div class="logo">FlipFrame</div>
+                    <h1>Kullanım Koşulları</h1>
+                    <div class="last-updated">Son Güncelleme: 11 Haziran 2026</div>
+                </header>
+
+                <p>FlipFrame mobil uygulamasını indirerek veya kullanarak, bu kullanım koşullarını kabul etmiş sayılmaktasınız. Lütfen uygulamayı kullanmadan önce koşulları dikkatlice okuyunuz.</p>
+
+                <h2>1. Hizmet Tanımı</h2>
+                <p>FlipFrame, kullanıcıların videolarını farklı en-boy oranlarına göre yeniden çerçevelemelerini (crop/reframing) ve filigransız video dışa aktarmalarını sağlayan bir mobil uygulamadır. Tüm video işleme işlemleri kullanıcının kendi cihazında yerel olarak gerçekleşir.</p>
+
+                <h2>2. Uygulama İçi Satın Alımlar</h2>
+                <p>Uygulama, dışa aktarılan videolardan marka filigranını kaldırmak amacıyla tek seferlik ömür boyu (Lifetime) satın alım seçeneği sunar:</p>
+                <ul>
+                    <li>Ödemeler, kullanıcının Apple App Store hesabı üzerinden tahsil edilir.</li>
+                    <li>Fiyatlar, kullanıcının bölgesine ve para birimine göre Apple tarafından dinamik olarak belirlenir.</li>
+                    <li>Satın alımların ve hakların yönetimi RevenueCat altyapısı ile doğrulanır.</li>
+                    <li>İadeler ve faturalandırma işlemleri tamamen Apple App Store kurallarına ve politikalarına tabidir.</li>
+                </ul>
+
+                <h2>3. Fikri Mülkiyet ve Kullanım Sınırları</h2>
+                <p>FlipFrame uygulamasının tasarımı, kaynak kodları, logoları ve tüm görsel/işlevsel bileşenleri FlipFrame geliştiricisine aittir. Kullanıcılar:</p>
+                <ul>
+                    <li>Uygulamayı tersine mühendislik yöntemleriyle kopyalayamaz veya kaynak kodlarına erişmeye çalışamaz.</li>
+                    <li>Uygulamayı yasa dışı, telif hakkı ihlali barındıran veya zararlı içerikler üretmek amacıyla kullanamaz.</li>
+                </ul>
+
+                <h2>4. Sorumluluk Sınırlandırması</h2>
+                <p>FlipFrame, videoların işlenmesi esnasında veya cihaz kaynaklı yaşanabilecek veri kayıplarından, donanımsal yavaşlamalardan sorumlu tutulamaz. Uygulama "olduğu gibi" (as-is) sunulmaktadır.</p>
+
+                <h2>5. Koşullarda Değişiklikler</h2>
+                <p>Bu kullanım koşullarını zaman zaman güncelleme hakkımız saklıdır. Güncel koşullar bu sayfada yayınlandığı andan itibaren geçerlilik kazanır.</p>
+
+                <div class="contact-box">
+                    <h3>İletişim</h3>
+                    <p>Koşullarla ilgili sorularınız için bizimle iletişime geçebilirsiniz:</p>
+                    <a href="mailto:support@flipframe.app">support@flipframe.app</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENGLISH TERMS OF USE -->
+        <div id="lang-en" class="lang-section">
+            <div class="card">
+                <header>
+                    <div class="logo">FlipFrame</div>
+                    <h1>Terms of Use</h1>
+                    <div class="last-updated">Last Updated: June 11, 2026</div>
+                </header>
+
+                <p>By downloading or using the FlipFrame mobile application, you agree to be bound by these Terms of Use. Please read them carefully before using the app.</p>
+
+                <h2>1. Description of Service</h2>
+                <p>FlipFrame is a mobile application that allows users to reframe/crop videos into different aspect ratios and export them. All video rendering takes place locally on the user's device.</p>
+
+                <h2>2. In-App Purchases</h2>
+                <p>The app offers a one-time lifetime purchase option to remove the brand watermark from exported videos:</p>
+                <ul>
+                    <li>Payments are billed through your Apple App Store account.</li>
+                    <li>Pricing is determined dynamically by Apple based on your storefront/region.</li>
+                    <li>Entitlement validation and purchase status are managed securely via RevenueCat.</li>
+                    <li>Refunds and billing disputes are subject to Apple App Store policies.</li>
+                </ul>
+
+                <h2>3. Intellectual Property & Restrictions</h2>
+                <p>All source code, designs, branding, and assets of FlipFrame are the intellectual property of the FlipFrame developer. Users are restricted from:</p>
+                <ul>
+                    <li>Attempting to reverse engineer, decompile, or copy the application code.</li>
+                    <li>Using the app for copyright infringement or creating illegal/harmful content.</li>
+                </ul>
+
+                <h2>4. Limitation of Liability</h2>
+                <p>FlipFrame is provided on an "as-is" and "as-available" basis. We are not liable for any data loss, rendering delays, or hardware issues resulting from the use of the app.</p>
+
+                <h2>5. Changes to These Terms</h2>
+                <p>We reserve the right to update these Terms of Use at any time. Changes will take effect immediately upon posting to this page.</p>
+
+                <div class="contact-box">
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions regarding these Terms of Use, please contact us at:</p>
+                    <a href="mailto:support@flipframe.app">support@flipframe.app</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 FlipFrame. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.lang-btn').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            document.getElementById('lang-' + lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

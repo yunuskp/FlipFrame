@@ -2,3 +2,5 @@ DerivedData/
 .DS_Store
 *.xcuserstate
 xcuserdata/
+FlipFrame/
+FlipFrame.xcodeproj/
